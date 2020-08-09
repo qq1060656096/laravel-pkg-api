@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         verbose="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <php>
+        <env name="APP_KEY" value="AckfSECXIvnK5r28GVIWUAxmbBSjTsmF"/>
+        <env name="APP_DEBUG" value="true" />
+        <env name="DB_CONNECTION" value="common" />
+        <env name="DB_HOST" value="199.199.199.199" />
+        <env name="DB_PORT" value="3306" />
+        <env name="DB_DATABASE" value="hello" />
+        <env name="DB_USERNAME" value="root3" />
+        <env name="DB_PASSWORD" value="root3" />
+        <env name="DB_BUSINESS_CONNECTION" value="business" />
+        <env name="DB_BUSINESS_HOST" value="199.199.199.199" />
+        <env name="DB_BUSINESS_PORT" value="3306" />
+        <env name="DB_BUSINESS_DATABASE" value="hello" />
+        <env name="DB_BUSINESS_USERNAME" value="root3" />
+        <env name="DB_BUSINESS_PASSWORD" value="root3" />
+        
+    </php>
+    <testsuites>
+        <testsuite name="laravel-pkg-api Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

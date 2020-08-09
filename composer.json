@@ -1,0 +1,39 @@
+{
+    "name": "zwei/laravel-pkg-api",
+    "description": "laravel api package",
+    "type": "library",
+    "keywords": [
+      "laravel-api-package",
+      "laravel-package",
+      "api-package"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/qq1060656096/laravel-pkg-api",
+    "support": {
+      "issues": "https://github.com/qq1060656096/laravel-pkg-api/issues",
+      "source": "https://github.com/qq1060656096/laravel-pkg-api"
+    },
+    "authors": [
+      {
+        "name": "Zhao Wei Jie",
+        "email": "1060656096@qq.com"
+      }
+    ],
+    "require": {
+        "ellipsesynergie/api-response": "^0.16.0"
+    },
+    "autoload":{
+      "psr-4": {
+          "Zwei\\LaravelPkgApi\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4":{
+        "Zwei\\LaravelPkgApi\\Tests\\": "tests/"
+      }
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^9.2",
+      "orchestra/testbench": "^5.3"
+    }
+}
