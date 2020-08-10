@@ -35,8 +35,10 @@ class ApiRequest extends FormRequest
         $jsonData = [
             'code'      => 422,
             'message'   => $message ? $message : trans("validate.unprocessableEntity"),
-            'errorsRaw' => $errors,
-            'errors' => $errorsNew,
+            'data' => [
+                'errorsRaw' => $errors,
+                'errors' => $errorsNew,
+            ],
         ];
         throw new HttpResponseException(response()->json($jsonData, 422));
     }

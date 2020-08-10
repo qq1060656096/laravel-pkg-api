@@ -4,7 +4,6 @@
 - composer require --dev -vvv phpunit/phpunit
 - composer require --dev -vvv orchestra/testbench
 - composer require -vvv ellipsesynergie/api-response
-- composer require -vvv laravel/passport:^9.2
 - composer require -vvv barryvdh/laravel-ide-helper
 
 ### docs

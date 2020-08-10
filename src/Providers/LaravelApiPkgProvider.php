@@ -1,9 +1,8 @@
 <?php
 namespace  Zwei\LaravelPkgApi\Providers;
 
-
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Zwei\LaravelPkgApi\Exception\ExceptionHandler;
 
 class LaravelApiPkgProvider extends ServiceProvider
 {
@@ -14,8 +13,7 @@ class LaravelApiPkgProvider extends ServiceProvider
      */
     public function boot()
     {
-        $file = dirname(__DIR__).'/../routes/api.v1.php';
-        $this->loadRoutesFrom($file);
+        $this->app->singleton(\Illuminate\Contracts\Debug\ExceptionHandler::class, ExceptionHandler::class);
     }
     
     /**

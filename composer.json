@@ -20,7 +20,8 @@
       }
     ],
     "require": {
-        "ellipsesynergie/api-response": "^0.16.0"
+        "ellipsesynergie/api-response": "^0.16.0",
+        "barryvdh/laravel-ide-helper": "^2.7"
     },
     "autoload":{
       "psr-4": {
